@@ -103,7 +103,7 @@ catch(error){
                 from: 'anusriraman.r@gmail.com',
                 to: existing_user.Email,
                 subject: 'User verification',
-                html:`<span>Verification code :<h1>${string}</h1> </span><a href="http://localhost:3000/userverification">Reset Password</a>`
+                html:`<span>Verification code :<h1>${string}</h1> </span><a href="https://passwordresetfrontend.vercel.app/userverification">Reset Password</a>`
               };
 
               transporter.sendMail(mailOptions, function(error, info){
